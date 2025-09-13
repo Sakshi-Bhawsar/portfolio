@@ -42,3 +42,56 @@ export const services = [
     tags: ["Design Thinking", "Debugging", "Innovation"],
   },
 ];
+
+
+export interface IProject {
+  name: string;
+  description: string;
+  tags: string[];
+  image?: string; // optional thumbnail
+  link: string;  // optional GitHub or live demo link
+  icon?:string
+}
+
+export const projects: IProject[] = [
+  {
+    name: "HowToAlgo",
+    description:
+      "A comprehensive learning platform for Data Structures & Algorithms, System Design, and Machine Learning. Features interactive coding challenges, tutorials, and contest preparation materials with a built-in coding playground.",
+    tags: ["Next.js", "Strapi", "Tailwind CSS", "TypeScript", "Coding Playground"],
+    image: "/assets/howtoalgo.png",
+    link: "https://www.howtoalgo.com/",
+  },
+  {
+    name: "StudyNotion",
+    description:
+      "An EdTech platform enabling users to create, consume, and rate educational content with secure authentication, payments, and course management.",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux", "Razorpay"],
+    image: "/assets/study.png",
+    link: "https://github.com/Sakshi-Bhawsar/online_course_managmentSystem.git",
+  },
+  {
+    name: "Netflix GPT",
+    description:
+      "A Netflix-inspired movie browsing app with Firebase authentication and AI-powered search using TMDB and OpenAI APIs.",
+    tags: ["React.js", "Tailwind CSS", "Firebase", "TMDB API", "OpenAI"],
+    icon: "🎬",
+    link: "https://github.com/Sakshi-Bhawsar/Netflix-gpt.git",
+  },
+  {
+    name: "Weather App",
+    description:
+      "A responsive weather app that fetches real-time weather data from a public API with a clean, minimal interface.",
+    tags: ["React.js", "Tailwind CSS", "Weather API"],
+    icon: "🌥️",
+    link: "https://github.com/Sakshi-Bhawsar/wetherapp.git",
+  },
+  {
+    name: "Shopping Cart",
+    description:
+      "A shopping cart application built with React and Redux, allowing users to add and remove items with smooth state management.",
+    tags: ["React.js", "Redux", "Tailwind CSS"],
+    icon: "🛒",
+    link: "https://github.com/Sakshi-Bhawsar/shopping-cart.git",
+  },
+];
