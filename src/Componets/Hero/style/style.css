@@ -1,0 +1,80 @@
+
+.shiny-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.shiny-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(142, 142, 142, 0.5) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  transform: skewX(-20deg);
+  animation: shine 6s infinite ease-in-out; /* slower */
+  animation-delay: 2s; /* delay before it starts */
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 200%;
+  }
+}
+
+.hero-gradient {
+  /* position: absolute; */
+  /* inset: 0;
+  pointer-events: none;  */
+  /* so it doesn’t block clicks */
+  background: radial-gradient(
+    circle at center,
+    rgba(58, 182, 255, 0.3) 0%,     /* bright cyan in center */
+    rgba(58, 182, 255, 0.0) 70%     /* fades to transparent at edges */
+  );
+  /* z-index: 0;  */
+  /* behind your content */
+}
+
+.gradient-subtext {
+     background: linear-gradient(to right, #06b6d4, #3b82f6);
+     /* cyan → blue */
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     color: transparent;
+   }
+
+
+         .btn-grad {background-image: linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%)}
+         .btn-grad {
+            /* margin: 10px; */
+            /* padding: 15px 45px; */
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
