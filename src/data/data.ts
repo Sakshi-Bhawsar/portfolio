@@ -50,7 +50,7 @@ export interface IProject {
   tags: string[];
   image?: string; // optional thumbnail
   link: string;  // optional GitHub or live demo link
-  icon?:string
+  icon?: string
 }
 
 export const projects: IProject[] = [
@@ -58,7 +58,7 @@ export const projects: IProject[] = [
     name: "HowToAlgo",
     description:
       "A comprehensive learning platform for Data Structures & Algorithms, System Design, and Machine Learning. Features interactive coding challenges, tutorials, and contest preparation materials with a built-in coding playground.",
-    tags: ["Next.js", "Strapi", "Tailwind CSS", "TypeScript", "Coding Playground"],
+    tags: ["Next.js", "Tailwind CSS", "TypeScript", "Node js","AWS"],
     image: "/assets/howtoalgo.png",
     link: "https://www.howtoalgo.com/",
   },
@@ -93,5 +93,50 @@ export const projects: IProject[] = [
     tags: ["React.js", "Redux", "Tailwind CSS"],
     icon: "🛒",
     link: "https://github.com/Sakshi-Bhawsar/shopping-cart.git",
+  },
+];
+
+
+export const experiences = [
+  {
+    title: "SDE - Software Developer Engineer",
+    company: "anurittiksha edtech private limited",
+    duration: "Nov 2024 – Jul 2025",
+    description:
+      "Developed HowToAlgo, a platform offering courses on DSA, system design, behavioral skills, and algorithm problem-solving , Implemented SEO-friendly, responsive UI with server-side rendering and dynamic routing for structured content delivery"
+  },
+  {
+    title: "React.js Trainee",
+    company: "StackInfinite",
+    duration: "Mar 2024 – Sep 2024",
+    description:
+      "Developed and maintained web applications using React.js and Next.js, collaborated with team, and created documentation.",
+  },
+];
+
+export const education = [
+  {
+    title: "MCA - Master of Computer Applications",
+    company: "SCSIT, DAVV Indore",
+    duration: "2022 – 2024",
+    description: "Graduated with a CGPA of 7.33, focused on web development and software engineering.",
+  },
+  {
+    title: "B.C.A - Bachelor of Computer Application",
+    company: "Dayanand Saraswati College, Shajapur",
+    duration: "2019 – 2022",
+    description: "Graduated with 87%, learned core programming and computer fundamentals.",
+  },
+  {
+    title: "12th (Higher Secondary)",
+    company: "MP Board",
+    duration: "2019",
+    description: "Completed 12th with a focus on science and mathematics.",
+  },
+  {
+    title: "10th (High School)",
+    company: "MP Board",
+    duration: "2017",
+    description: "Completed 10th with strong academic performance.",
   },
 ];
