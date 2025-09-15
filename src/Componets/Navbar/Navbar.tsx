@@ -3,6 +3,7 @@ import { classnames } from "@/utils/style";
 import Button from "../Button";
 import './style/style.css'
 import { bgPrimary, lightDarkText } from "@/constants/color";
+import Link from "next/link";
 
 const Navbar = () => {
     return (
@@ -14,12 +15,13 @@ const Navbar = () => {
                 </h1>
                 <nav className="flex py-3 px-6 rounded-full gap-6 items-center text-sm shadow cursor-pointer transition-all
                  duration-500 ease-in-out hover:shadow-2xl hover:bg-[#212A37] hover:scale-105">
-                    <p className="flex items-center hover:bg-[#171f29] py-1 px-4 rounded-full  hover:border-b-[#26a0da] hover:border-b-2 ">🏠 HOME</p>
+                 <Link href='/'>   <p className="flex items-center hover:bg-[#171f29] py-1 px-4 rounded-full  hover:border-b-[#26a0da] hover:border-b-2 ">🏠 HOME</p></Link>
                     <p className="flex items-center hover:bg-[#171f29] py-1 px-4 rounded-full  hover:border-b-[#26a0da] hover:border-b-2 ">📝 RESUME</p>
-                    <p className="flex items-center hover:bg-[#171f29] py-1 px-4 rounded-full  hover:border-b-[#26a0da] hover:border-b-2 ">💻 PROJECT</p>
+                  <Link href='/project'>  <p className="flex items-center hover:bg-[#171f29] py-1 px-4 rounded-full  hover:border-b-[#26a0da] hover:border-b-2 ">💻 PROJECT</p> </Link>
                     <p className="flex items-center hover:bg-[#171f29] py-1 px-4 rounded-full  hover:border-b-[#26a0da] hover:border-b-2 ">✉️ CONTACT</p>
                 </nav>
             </div>
+            
 
         </div>
     )

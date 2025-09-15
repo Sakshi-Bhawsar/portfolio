@@ -2,6 +2,7 @@
 import Image from "next/image"
 import './style/style.css'
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const Hero = () => {
     const [quote, setQuote] = useState("")
@@ -36,7 +37,7 @@ const Hero = () => {
                 </h1 >
                 <p className="mt-10  text-gray-400 text-xl  leading-8 ">Through strategic development and innovative thinking, I craft web solutions that go beyond functionality. My goal is to design experiences that not only work flawlessly but also leave a lasting impression.</p>
                 <div className="flex items-center gap-14 text-white my-8 ">
-                    <button className="btn-grad px-6 py-3 rounded-lg cursor-pointer">View My Work</button>
+                   <Link href='/project'> <button className="btn-grad px-6 py-3 rounded-lg cursor-pointer">View My Work</button></Link>
                     <button className=" border-2 border-[#06b6d4] px-6 py-3 rounded-lg cursor-pointer hover:bg-[#222e46] hover:shadow-md active:text-gray-300">Get in Touch</button>
                 </div>
                 <div className="flex items-center text-white max-w-xl   justify-between  text-lg   font-semibold gradient-subtext">

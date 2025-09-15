@@ -3,6 +3,7 @@ import { projects } from "@/data/data"
 import { classnames } from "@/utils/style"
 import ProjectCard from "./ProjectCard/ProjectCard"
 import '../Hero/style/style.css'
+import Link from "next/link"
 
 const MyWork = () => {
     return (
@@ -15,7 +16,7 @@ const MyWork = () => {
                 ))}
             </div>
             <div className="flex justify-center py-8">
-                <button className="btn-grad px-6 py-3 rounded-lg cursor-pointer w-fit">View All Projects</button>
+                <Link href='/project'>  <button className="btn-grad px-6 py-3 rounded-lg cursor-pointer w-fit">View All Projects</button></Link>
             </div>
 
         </div>
