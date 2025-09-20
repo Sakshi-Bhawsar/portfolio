@@ -47,9 +47,9 @@ const experiences = [
 
 const Resume = () => {
     return (
-        <section className="  space-y-10  bg-[#0f172a] text-gray-200 py-16 px-6 md:px-20">
+        <section className=" max-w-[1440px] mx-auto   space-y-10  bg-[#0f172a] text-gray-200 py-16 px-6 md:px-20">
             {/* Header */}
-            <div className="flex flex-col md:flex-row gap-6 justify-center items-center md:justify-between border border-gray-700  border-t-purple-400 p-8 rounded-lg">
+            <div className="flex mt-16 flex-col md:flex-row gap-6 justify-center items-center md:justify-between border border-gray-700  border-t-purple-400 p-8 rounded-lg">
                 <div className=" space-y-2">
                     <h1 className="text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500">
                         Sakshi Bhawsar</h1>
@@ -59,15 +59,15 @@ const Resume = () => {
                 <div className=" space-y-6">
                     <p className="space-x-2">
                         <span className=" border text-lg rounded-2xl p-2  bg-gradient-to-r from-cyan-700 to-purple-600 ">📍</span>
-                        <span className="text-sm ">Shajapur,Madhya Pradesh</span>
+                        <span className=" text-xs sm:text-sm ">Shajapur,Madhya Pradesh</span>
 
                     </p>
                     <p className="space-x-2">
                         <span className=" border text-lg rounded-2xl p-2  bg-gradient-to-r from-cyan-700 to-purple-600 ">📧</span>
-                        <span className="text-sm ">sakshi5bhawsar@gmail.com</span>
+                        <span className=" text-xs sm:text-sm ">sakshi5bhawsar@gmail.com</span>
                     </p>
 
-                    <p className="space-x-2">
+                    <p className=" flex flex-col md:flex-row gap-2 items-center">
                         <a href="https://github.com/Sakshi-Bhawsar"
                             target="_blank"> <span className="button">💻GitHub</span></a>
                         <a href="https://www.linkedin.com/in/sakshi-bhawsar/"
@@ -110,12 +110,12 @@ const Resume = () => {
                                     transition={{ duration: 0.6, delay: index * 0.2 }}
                                     className="border border-gray-700 rounded-xl p-6 bg-white/5 backdrop-blur-md hover:shadow-lg hover:shadow-cyan-500/20 transition"
                                 >
-                                    <div className="flex justify-between items-start mb-4">
+                                    <div className="flex flex-col gap-4 sm:flex-row justify-between items-start mb-4">
                                         <div>
                                             <h3 className="text-lg font-semibold">{exp.role}</h3>
                                             <p className="text-gray-400 text-sm">{exp.company}</p>
                                         </div>
-                                        <div className="flex flex-col items-end">
+                                        <div className="flex flex-col items-start sm:items-end">
                                             <span className="text-xs px-3 py-1 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 text-white font-medium">
                                                 {exp.type}
                                             </span>

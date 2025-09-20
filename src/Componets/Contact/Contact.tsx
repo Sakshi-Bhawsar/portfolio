@@ -4,14 +4,14 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
     return (
-        <section className="min-h-screen bg-[#0f172a] text-white py-20 px-6">
+        <section className=" mt-14 min-h-screen bg-[#0f172a] text-white py-20 px-6">
             <div className="max-w-5xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                    <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                         Let’s Build Something Together 🚀
                     </h1>
-                    <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">
+                    <p className="mt-4 text-gray-400 text-sm md:text-lg max-w-2xl mx-auto">
                         Have an idea, project, or just want to say hi?
                         Feel free to reach out—I’m always open to collaboration and new opportunities.
                     </p>
@@ -20,18 +20,18 @@ export default function Contact() {
                 <div className="grid md:grid-cols-2 gap-12">
                     {/* Contact Info */}
                     <div className="flex flex-col gap-6 justify-center">
-                        <div className="p-6 bg-white/10 border border-cyan-500/30 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-cyan-500/30 transition">
-                            <FaEnvelope className="text-3xl text-cyan-400 mb-2" />
-                            <h3 className="text-lg font-semibold">Email</h3>
+                        <div className=" p-4 md:p-6 bg-white/10 border border-cyan-500/30 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-cyan-500/30 transition">
+                            <FaEnvelope className=" text-xl md:text-3xl text-cyan-400 mb-2" />
+                            <h3 className=" text-sm md:text-lg font-semibold">Email</h3>
                             <a
                                 href="mailto:sakshi5bhawsar@gmail.com"
                                 className="text-indigo-300 hover:underline"
                             >sakshi5bhawsar@gmail.com</a>
                         </div>
 
-                        <div className="p-6 bg-white/10 border border-cyan-500/30 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-cyan-500/30 transition">
-                            <FaLinkedin className="text-3xl text-blue-400 mb-2" />
-                            <h3 className="text-lg font-semibold">LinkedIn</h3>
+                        <div className=" p-4 md:p-6 bg-white/10 border border-cyan-500/30 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-cyan-500/30 transition">
+                            <FaLinkedin className=" text-xl md:text-3xl text-blue-400 mb-2" />
+                            <h3 className=" text-base md:text-lg font-semibold">LinkedIn</h3>
                             <a
                                 href="https://www.linkedin.com/in/sakshi-bhawsar/"
                                 target="_blank"
@@ -40,9 +40,9 @@ export default function Contact() {
                             >https://www.linkedin.com/in/sakshi-bhawsar/</a>
                         </div>
 
-                        <div className="p-6 bg-white/10 border border-cyan-500/30 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-cyan-500/30 transition">
-                            <FaGithub className="text-3xl text-gray-300 mb-2" />
-                            <h3 className="text-lg font-semibold">GitHub</h3>
+                        <div className=" p-4 md:p-6 bg-white/10 border border-cyan-500/30 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-cyan-500/30 transition">
+                            <FaGithub className=" text-xl md:text-3xl text-gray-300 mb-2" />
+                            <h3 className=" text-base md:text-lg font-semibold">GitHub</h3>
                             <a
                                 href="https://github.com/Sakshi-Bhawsar"
                                 target="_blank"

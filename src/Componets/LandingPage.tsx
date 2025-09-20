@@ -15,8 +15,9 @@ const LandingPage = () => {
                 <Service />
                 <MyWork />
                 <EducationExperience />
-                <ReadyToStart/>
+                 <ReadyToStart/>
             </div>
+             
             <Footer />
         </div>
 

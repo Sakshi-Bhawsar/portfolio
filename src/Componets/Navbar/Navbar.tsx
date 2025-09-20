@@ -3,6 +3,7 @@ import { useState } from "react";
 import { fixedMargin } from "@/constants/style";
 import { classnames } from "@/utils/style";
 import Link from "next/link";
+import { style } from "framer-motion/client";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,12 +16,14 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed top-0 w-full z-50 bg-[#000] text-white">
+    <div className="fixed top-0 w-full z-50  text-white">
       <div
         className={classnames(
           fixedMargin,
-          "flex justify-between items-center py-2 bg-[#000] shadow"
+          "flex justify-between items-center py-2 bg-[#000] shadow " 
         )}
+
+        style={{boxShadow:'0px 2px 4px #26a0da'}}
       >
         {/* Logo */}
         <h1 className="flex flex-col font-serif font-bold text-lg text-white">

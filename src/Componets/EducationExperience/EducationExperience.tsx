@@ -34,7 +34,7 @@ const Timeline = () => {
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
                 {/* Experience Column */}
                 <div>
-                    <h2 className="text-3xl font-bold mb-8 text-cyan-400">Experience</h2>
+                    <h2 className="text-2xl md:text-4xl font-bold mb-8 text-cyan-400">Experience</h2>
                     <div className="space-y-10">
                         {experiences.map((item, index) => (
                             <TimelineItem key={index} item={item} />
@@ -44,7 +44,7 @@ const Timeline = () => {
 
                 {/* Education Column */}
                 <div>
-                    <h2 className="text-3xl font-bold mb-8 text-blue-400">Education</h2>
+                    <h2 className="text-2xl  md:text-4xl font-bold mb-8 text-blue-400">Education</h2>
                     <div className="space-y-10">
                         {education.map((item, index) => (
                             <TimelineItem key={index} item={item} />

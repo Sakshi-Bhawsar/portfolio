@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const Projects = () => {
     return (
-        <div className="  w-full flex flex-col justify-center  text-center">
+        <div className="  mt-14 w-full flex flex-col justify-center  text-center">
             <div className="relative py-20 px-6 bg-gradient-to-b from-[#0f172a] via-[#111827] to-[#0f172a] overflow-hidden">
                 {/* Decorative background glow */}
                 <div className="absolute inset-0">
@@ -37,7 +37,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2  gap-8 max-w-4xl mx-auto mb-5 py-14 mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-2  gap-8 max-w-4xl mx-auto mb-5 py-14 mt-10 p-4">
                 {projects.map((project, index) => (
                     <ProjectCard key={index} project={project} />
                 ))}

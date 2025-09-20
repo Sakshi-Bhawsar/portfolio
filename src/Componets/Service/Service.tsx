@@ -21,14 +21,14 @@ const Service = () => {
         ],
     };
     return (
-        <section className=" py-14 mt-10  w-full bg-[#111827] text-white text-center">
-            <h2 className="text-4xl font-bold mb-4">My Quality Services</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto mb-12">
+        <section className=" py-14 mt-10  w-full bg-[#111827] text-white text-center ">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4">My Quality Services</h2>
+            <p className="text-gray-400 max-w-2xl mx-auto mb-12 text-sm p-2">
                 I offer end-to-end development solutions that combine creativity, strategy,
                 and technology. My goal is to craft applications that are not only functional
                 but also deliver impactful digital experiences.
             </p>
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-4xl mx-auto p-4">
                 <Slider {...settings} className="flex items-stretch">
                     {services.map((service, index) => (
                         <div key={index} className="px-4 flex">

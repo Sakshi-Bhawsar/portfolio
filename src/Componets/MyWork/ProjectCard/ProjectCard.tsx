@@ -34,7 +34,7 @@ const ProjectCard = ({ project }: { project: IProject }) => {
                 </div>
             )}
 
-            <p className="text-start p-2 text-gray-300">{project.description}</p>
+            <p className="text-start p-2 text-sm text-gray-300">{project.description}</p>
 
             <div className="flex gap-2 p-2 flex-wrap mt-auto">
                 {project.tags.map((tag, index) => (
