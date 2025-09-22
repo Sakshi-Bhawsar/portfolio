@@ -1,4 +1,3 @@
-import { textColor } from "@/constants/style";
 import { IProject } from "@/data/data"
 import { classnames } from "@/utils/style";
 import Image from "next/image"

@@ -3,8 +3,15 @@
 import { motion } from "framer-motion";
 import { education, experiences } from "@/data/data";
 
+interface TimelineData {
+  title: string;
+  company: string;
+  duration: string;
+  description: string;
+}
 
-const TimelineItem = ({ item }: { item: any }) => (
+
+const TimelineItem = ({ item }: { item:  TimelineData}) => (
     <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

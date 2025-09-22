@@ -24,6 +24,8 @@ const Hero = () => {
             setQuote(quotes[randomIndex]);
         }, 60000)
         return () => clearInterval(interval);
+            // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, [])
 
     return (
@@ -70,7 +72,7 @@ const Hero = () => {
     
     {quote && (
       <div className="flex flex-col justify-center items-center gap-2 w-full max-w-md p-4 h-auto sm:h-[150px] shiny-box animate__animated animate__fadeInUp shadow-lg shadow-[#3D444E] text-white border border-[#3D444E] rounded-2xl bg-white/10 backdrop-blur-md">
-        <span className="text-center text-sm sm:text-base">"{quote}"</span>
+        <span className="text-center text-sm sm:text-base">&quot{quote}&quot</span>
         <span className="text-center text-sm sm:text-base">- SAKSHI</span>
       </div>
     )}

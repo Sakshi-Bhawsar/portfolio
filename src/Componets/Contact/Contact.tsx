@@ -95,7 +95,7 @@ export default function Contact() {
                     </div>
 
                     {/* Contact Form */}
-                    <form className="bg-white/10 backdrop-blur-md border border-cyan-500/30 p-6 rounded-2xl shadow-lg space-y-6" onSubmit={(e) => { e.preventDefault(), handleSubmit() }}>
+                    <form className="bg-white/10 backdrop-blur-md border border-cyan-500/30 p-6 rounded-2xl shadow-lg space-y-6" onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
                         {status && (
                             <p className={classnames("text-center text-sm font-medium text-cyan-400  bg-gray-900 p-2 rounded-lg min-h-[40px]")}>
                                 {status}

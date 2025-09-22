@@ -3,7 +3,6 @@ import { useState } from "react";
 import { fixedMargin } from "@/constants/style";
 import { classnames } from "@/utils/style";
 import Link from "next/link";
-import { style } from "framer-motion/client";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

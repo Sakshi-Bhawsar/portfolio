@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin } from "react-icons/fa";
 import './style/style.css'
 import Skills from "./Skills";
 import Education from "./Education";
