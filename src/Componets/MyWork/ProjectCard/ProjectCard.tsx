@@ -48,6 +48,8 @@ const ProjectCard = ({ project }: { project: IProject }) => {
 
             <Link
                 href={project?.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex gap-2 items-center px-6 py-2 mt-2 rounded-lg bg-cyan-600/20 border border-cyan-500 text-cyan-400 hover:bg-cyan-600/30 hover:text-white transition-colors"
             >
                 View <FaArrowUpRightFromSquare className="text-cyan-400 group-hover:text-white" />

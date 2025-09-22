@@ -42,9 +42,11 @@ const Hero = () => {
       <Link href="/project">
         <button className="btn-grad px-6 py-3 rounded-lg cursor-pointer w-full sm:w-auto text-center">View My Work</button>
       </Link>
+       <Link href='/contact'>
       <button className="border-2 border-[#06b6d4] px-6 py-3 rounded-lg cursor-pointer hover:bg-[#222e46] hover:shadow-md active:text-gray-300 w-auto text-center mt-4 sm:mt-0">
         Get in Touch
       </button>
+      </Link>
     </div>
     <div className="flex flex-col sm:flex-row items-center text-white justify-between text-lg font-semibold gap-4 sm:gap-10 mt-6 gradient-subtext">
       <div className="flex flex-col items-center">

@@ -58,7 +58,7 @@ export const projects: IProject[] = [
     name: "HowToAlgo",
     description:
       "A comprehensive learning platform for Data Structures & Algorithms, System Design, and Machine Learning. Features interactive coding challenges, tutorials, and contest preparation materials with a built-in coding playground.",
-    tags: ["Next.js", "Tailwind CSS", "TypeScript", "Node js","AWS"],
+    tags: ["Next.js", "Tailwind CSS", "TypeScript", "Node js", "AWS"],
     image: "/assets/howtoalgo.png",
     link: "https://www.howtoalgo.com/",
   },
@@ -69,6 +69,14 @@ export const projects: IProject[] = [
     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux", "Razorpay"],
     image: "/assets/study.png",
     link: "https://github.com/Sakshi-Bhawsar/online_course_managmentSystem.git",
+  },
+  {
+    name: "Portfolio Website",
+    description:
+      "My personal portfolio built with Next.js and Tailwind CSS, showcasing projects, skills, and contact form integration with Firebase for user messages.",
+    tags: ["Next.js", "Tailwind CSS", "Firebase", "React.js"],
+    icon: "🌐",
+    link: "https://github.com/Sakshi-Bhawsar/portfolio.git",
   },
   {
     name: "Netflix GPT",
