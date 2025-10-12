@@ -8,27 +8,29 @@ const Footer = () => {
         {/* Social Links */}
         <div className="flex gap-5 text-lg">
           <a
-            href="https://github.com/yourgithub"
+            href="https://github.com/Sakshi-Bhawsar"
+
             target="_blank"
             className="hover:text-cyan-400 transition-colors"
           >
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourlinkedin"
+            href="https://www.linkedin.com/in/sakshi-bhawsar/"
             target="_blank"
+
             className="hover:text-blue-500 transition-colors"
           >
             <FaLinkedin />
           </a>
           <a
-            href="mailto:youremail@example.com"
+            href="mailto:sakshi5bhawsar@gmail.com"
             className="hover:text-red-400 transition-colors"
           >
             <FaEnvelope />
           </a>
           <a
-            href="https://instagram.com/yourinstagram"
+            href="https://www.instagram.com/its_sakshi_bhawsar_/"
             target="_blank"
             className="hover:text-pink-500 transition-colors"
           >
